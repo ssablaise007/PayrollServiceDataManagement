@@ -3,15 +3,8 @@
 
 ------------------  #UC1
 
-mysql> CREATE TABLE payrollservice
-    -> (
-    -> id INT unsigned  NOT NULL AUTO_INCREMENT,
-    -> name VARCHAR(150) NOT NULL,
-    -> salary Double NOT NULL,
-    -> start DATE NOT NULL,
-    -> PRIMARY KEY (id)
-    -> );
-Query OK, 0 rows affected (3.04 sec)
+mysql> CREATE DATABASE payroll_service;
+Query OK, 1 row affected (0.30 sec)
 
 mysql> USE payrollservice;
 Database changed
@@ -25,4 +18,16 @@ mysql> select * from payrollservice;
 |  3 | ZACH   | M      |   16000 | 2020-06-21 |
 +----+--------+--------+---------+------------+
 3 rows in set (0.04 sec)
+
+------------------  #UC2
+
+mysql> CREATE TABLE payrollservice
+    -> (
+    -> id INT unsigned  NOT NULL AUTO_INCREMENT,
+    -> name VARCHAR(150) NOT NULL,
+    -> salary Double NOT NULL,
+    -> start DATE NOT NULL,
+    -> PRIMARY KEY (id)
+    -> );
+Query OK, 0 rows affected (3.04 sec)
 
