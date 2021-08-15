@@ -52,5 +52,15 @@ mysql> SELECT * FROM payrollservice;
 +----+--------+--------+---------+------------+
 3 rows in set (0.03 sec)
 
+------------------  #UC5
+
+mysql> SELECT * FROM payrollservice WHERE name = 'ZACH';
++----+------+--------+---------+------------+
+| id | name | gender | salary  | start      |
++----+------+--------+---------+------------+
+|  3 | ZACH | M      | 1800000 | 2020-06-21 |
++----+------+--------+---------+------------+
+1 row in set (0.04 sec)
+
 
 
