@@ -78,3 +78,62 @@ Query OK, 1 row affected (0.15 sec)
 Rows matched: 1  Changed: 1  Warnings: 0
 
 
+
+
+
+
+
+------------------  #UC7
+
+mysql> SELECT AVG(salary) FROM payrollservice WHERE gender = 'M' GROUP BY gender;
+
++-------------+
+| AVG(salary) |
++-------------+
+|      975000 |
++-------------+
+1 row in set (0.04 sec)
+
+mysql> DELETE FROM payrollservice WHERE name = 'ZACH';
+Query OK, 1 row affected (0.12 sec)
+
+mysql> SELECT gender, COUNT(name) FROM payrollservice GROUP BY gender;
++--------+-------------+
+| gender | COUNT(name) |
++--------+-------------+
+| F      |           1 |
+| M      |           2 |
++--------+-------------+
+2 rows in set (0.03 sec)
+
+mysql> SELECT gender, SUM(salary) FROM payrollservice GROUP BY gender;
++--------+-------------+
+| gender | SUM(salary) |
++--------+-------------+
+| F      |     2000000 |
+| M      |     1950000 |
++--------+-------------+
+2 rows in set (0.00 sec)
+
+mysql> SELECT gender, MIN(salary) FROM payrollservice GROUP BY gender;
++--------+-------------+
+| gender | MIN(salary) |
++--------+-------------+
+| F      |     2000000 |
+| M      |      150000 |
++--------+-------------+
+2 rows in set (0.05 sec)
+
+mysql> SELECT gender, MAX(salary) FROM payrollservice GROUP BY gender;
++--------+-------------+
+| gender | MAX(salary) |
++--------+-------------+
+| F      |     2000000 |
+| M      |     1800000 |
++--------+-------------+
+2 rows in set (0.00 sec)
+
+
+
+
+
