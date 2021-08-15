@@ -31,3 +31,12 @@ mysql> CREATE TABLE payrollservice
     -> );
 Query OK, 0 rows affected (3.04 sec)
 
+------------------  #UC3
+
+mysql> INSERT INTO payroll_service( name, salary, start) VALUES
+    -> ( 'BILL', 100000.00, '2018-05-08'),
+    -> ( 'TERISA', 150000.00, '2019-08-09'),
+    -> ( 'ELON', 250000.00, '2020-01-01');
+Query OK, 3 rows affected (0.30 sec)
+Records: 3  Duplicates: 0  Warnings: 0
+
