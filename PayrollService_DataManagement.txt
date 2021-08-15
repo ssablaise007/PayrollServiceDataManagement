@@ -40,3 +40,17 @@ mysql> INSERT INTO payroll_service( name, salary, start) VALUES
 Query OK, 3 rows affected (0.30 sec)
 Records: 3  Duplicates: 0  Warnings: 0
 
+------------------  #UC4
+
+mysql> SELECT * FROM payrollservice;
++----+--------+--------+---------+------------+
+| id | name   | gender | salary  | start      |
++----+--------+--------+---------+------------+
+|  1 | CLAY   | F      | 2000000 | 2018-01-03 |
+|  2 | JUSTIN | M      |  150000 | 2019-03-14 |
+|  3 | ZACH   | F      | 1800000 | 2020-06-21 |
++----+--------+--------+---------+------------+
+3 rows in set (0.03 sec)
+
+
+
