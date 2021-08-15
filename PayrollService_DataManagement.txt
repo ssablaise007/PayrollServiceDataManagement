@@ -9,15 +9,6 @@ Query OK, 1 row affected (0.30 sec)
 mysql> USE payrollservice;
 Database changed
 
-mysql> select * from payrollservice;
-+----+--------+--------+---------+------------+
-| id | name   | gender | salary  | start      |
-+----+--------+--------+---------+------------+
-|  1 | CLAY   | F      | 2000000 | 2018-01-03 |
-|  2 | JUSTIN | M      |  150000 | 2019-03-14 |
-|  3 | ZACH   | M      |   16000 | 2020-06-21 |
-+----+--------+--------+---------+------------+
-3 rows in set (0.04 sec)
 
 ------------------  #UC2
 
