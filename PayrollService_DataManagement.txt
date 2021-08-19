@@ -178,6 +178,7 @@ mysql> show tables;
 +---------------------------+
 6 rows in set (0.43 sec)
 
+
 mysql> describe payroll;
 +-------------+--------------+------+-----+---------+----------------+
 | Field       | Type         | Null | Key | Default | Extra          |
